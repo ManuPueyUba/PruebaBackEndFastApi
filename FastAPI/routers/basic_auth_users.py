@@ -80,4 +80,3 @@ async def login(form: OAuth2PasswordRequestForm = Depends()):
 @router.get("/users/me", response_model=User)
 async def me(user: User = Depends(current_user)):
     return user
-
